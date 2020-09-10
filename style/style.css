@@ -1,0 +1,57 @@
+body{
+
+}
+
+.navbar-1{
+  display: flex;
+  background-color: black;
+  list-style: none;
+}
+
+.navbar-1 > li {
+  margin: 4px;
+}
+.navbar-1 > li > a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-2 {
+display: flex;
+flex-direction: row;
+}
+
+.navbar-2 > ul{
+  display: flex;
+}
+
+.flex{
+  display: flex;
+}
+
+.navbar-2 > ul > li{
+  list-style: none;
+}
+.navbar-2 > ul > li > a{
+  text-decoration: none;
+}
+
+#get-tickets {
+  background-color: #0cc;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#logo{
+  width: 120px;
+}
+
+.navbar-2-right-div{
+  width: 30%;
+  float: right;
+  background-color: lightblue;
+}
