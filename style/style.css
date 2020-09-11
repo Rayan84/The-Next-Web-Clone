@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+
 }
 
 nav {
@@ -63,9 +65,13 @@ nav {
 }
 
 .navbar-2-right-div {
-  width: 30%;
-  float: right;
+  width: 35%;
+  justify-content: flex-end;
   background-color: lightblue;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .txt-deco-none {
@@ -74,4 +80,76 @@ nav {
 
 .lst-style-none {
   list-style: none;
+}
+
+.section-1{
+  margin-top: 5px;
+  display: flex;
+  color: white;
+  padding-left: 2px;
+}
+
+.article-1 {
+  padding-top: 20%;
+  padding-left: 10px;
+  width: 65%;
+  background: url(../media/article-1.jpg) no-repeat;
+  background-size: cover;
+}
+
+.article-1 > header > h2 {
+  font-size: 40px;
+}
+
+.article-3 > header > ul,
+.article-1 > header > ul {
+  display: flex;
+}
+
+.article-1 > header > ul > li {
+  list-style: none;
+}
+
+.article-2-and-3-container{
+  width: 33%;
+  padding-left: 6px;
+}
+
+.article-2 {
+  height: 49%;
+  display: flex;
+  padding-left: 2%;
+  background: url(../media/article-2.png) no-repeat;
+  background-size: cover;
+}
+
+.article-3 {
+  margin-top: 8px;
+  height: 49%;
+  display: flex;
+  padding-left: 2%;
+  background: url(../media/article-3.png) no-repeat;
+  background-size: cover;
+}
+
+.article-1 > header > ul > li > a,
+.article-3 > header > ul > li > a {
+  text-decoration: none;
+  margin: 4px;
+  color: white;
+}
+
+.latest-section {
+  width: 80%;
+  margin: auto;
+  background-color: yellow;
+}
+
+.latest-section > h2 {
+  color: red;
+  font-weight: bold;
+}
+
+.latest-ul-container{
+  width: 25%;
 }
