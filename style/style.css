@@ -42,6 +42,10 @@ nav {
   color: black;
 }
 
+.color-grey {
+  color: #555;
+}
+
 .nav-right a {
   text-decoration: none;
   color: white;
@@ -59,6 +63,10 @@ nav {
 
 .flex {
   display: flex;
+}
+
+.fle-start {
+  justify-content: flex-start;
 }
 
 #get-tickets {
@@ -151,6 +159,7 @@ nav {
 }
 
 .deals,
+.row-section,
 .latest-section {
   width: 85%;
   margin: auto;
@@ -237,4 +246,75 @@ nav {
 
 .bg-red {
   background-color: red;
+}
+
+.bg-light-red {
+  background-color: thistle;
+}
+
+.list-item {
+  list-style-type: disc;
+  border-bottom: 1px solid #eee;
+  padding: 12px;
+}
+
+.row-section {
+  width: 90%;
+}
+
+.u-row {
+  width: 380px;
+  margin-left: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.rsa-magic-bg {
+  background: transparent
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
+    no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.rsa-header {
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.rsa {
+  padding-top: 75%;
+  position: relative;
+  background-size: cover;
+  opacity: 1;
+}
+
+.rsa1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/wallstreetchimp-368x276.jpg");
+}
+
+.text-size-12 {
+  font-size: 14px;
+}
+
+.section-latest {
+  height: 96px;
+}
+
+.section-latest-header {
+  padding: 0 7px;
+}
+
+.section-latest-img {
 }
