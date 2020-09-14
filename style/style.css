@@ -37,7 +37,12 @@ nav {
   margin: 4px;
 }
 
+#sticky-nav {
+    z-index: 10;
+    width: 100%;
+}
 .navbar-2 {
+  background-color: white;
   flex-direction: row;
   padding: 4px 20px;
   font-size: 13px;
@@ -51,10 +56,12 @@ nav {
   font-size: 20px;
 }
 
-.nav-yellow-section {
-  margin-right: 10px;
+.nav-yellow-section-container {
   background-color: #fd3;
   padding: 7px;
+}
+
+.nav-yellow-section {
 }
 
 /* colors */
