@@ -47,8 +47,12 @@ nav {
   margin-right: 20px;
 }
 
+.time{
+  font-size: 20px;
+}
+
 .nav-yellow-section {
-  width: 100%;
+  margin-right: 10px;
   background-color: #fd3;
   padding: 7px;
 }
