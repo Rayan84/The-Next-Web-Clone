@@ -8,8 +8,8 @@ body {
 }
 
 body,
-.navbar-1{
- margin: 0;
+.navbar-1 {
+  margin: 0;
 }
 
 .nav-mobile {
@@ -20,6 +20,7 @@ body,
   display: flex;
   flex-direction: column;
 }
+
 .navbar-1 {
   display: flex;
   background-color: black;
@@ -29,6 +30,27 @@ body,
 
 .navbar-1 > li {
   margin: 4px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: white;
+  margin: 4px;
+}
+
+.footer-share-links2 > a {
+  margin: 3px;
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-share-links > a {
+  color: white;
+  font-size: 18px;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .navbar-1 > li > a {
@@ -43,16 +65,11 @@ body,
   order: 2;
 }
 
-.nav-right a {
-  text-decoration: none;
-  color: white;
-  margin: 4px;
-}
-
 #sticky-nav {
   z-index: 10;
   width: 100%;
 }
+
 .navbar-2 {
   background-color: white;
   flex-direction: row;
@@ -258,10 +275,6 @@ body,
   align-items: baseline;
 }
 
-/* .deals-row {
-  margin-left: -40px;
-} */
-
 .deals-row-ul {
   width: 250px;
 }
@@ -271,6 +284,7 @@ body,
   padding-bottom: 10px;
   font-size: 14px;
 }
+
 .deals-side-text a {
   padding-left: 30%;
 }
@@ -383,9 +397,6 @@ ul {
   padding: 0 7px;
 }
 
-.section-latest-img {
-}
-
 .footer-upper-div {
   padding-top: 3%;
   padding-bottom: 3%;
@@ -399,14 +410,6 @@ ul {
 
 .footer-share-links {
   margin: auto;
-}
-
-.footer-share-links > a {
-  color: white;
-  font-size: 18px;
-  background-color: #333;
-  border-radius: 50%;
-  padding: 10px;
 }
 
 .footer-share-links > a:hover {
@@ -423,14 +426,6 @@ ul {
 .footer-share-links2 {
   padding-top: 15px;
   margin: auto;
-}
-
-.footer-share-links2 > a {
-  margin: 3px;
-  color: white;
-  font-size: 14px;
-  color: #aaa;
-  text-decoration: none;
 }
 
 .footer-lower-div {

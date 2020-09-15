@@ -28,9 +28,9 @@
     height: 80px;
     background-color: white;
     top: 0;
-
     z-index: 11;
   }
+
   .nav-mobile > ul {
     margin-top: 0;
     height: 30px;
@@ -38,22 +38,28 @@
     justify-content: space-between;
   }
 
-  .nav-mobile > ul > div > li {
-    padding: 0 10px;
-    border-left: solid grey 1px;
-    width: 50px;
-    padding: auto;
-    padding-top: 4px;
-  }
-
-  .nav-mobile-div {
-    list-style: none;
-    display: flex;
+  .footer-share-ul > li {
+    margin: 3px;
   }
 
   .nav-mobile > ul > li {
     list-style: none;
     border-left: solid grey 1px;
+  }
+
+  .latest-ul-container > ul > li {
+    padding-right: 10px;
+  }
+
+  .nav-mobile > ul > div > li {
+    border-left: solid grey 1px;
+    width: 50px;
+    padding: 5px 10px;
+  }
+
+  .nav-mobile-div {
+    list-style: none;
+    display: flex;
   }
 
   .nav-yellow-section-container {
@@ -76,10 +82,6 @@
     display: flex;
   }
 
-  .latest-ul-container > ul > li {
-    padding-right: 10px;
-  }
-
   .latest-ul-container ul li a img {
     width: 85px;
     height: 85px;
@@ -89,7 +91,7 @@
     display: none;
   }
 
-  .deals{
+  .deals {
     display: block;
     width: 90%;
   }
@@ -105,26 +107,30 @@
     flex-direction: column;
   }
 
+  .footer-share-links2 > a {
+    font-size: 8px;
+    margin: auto;
+  }
+
   .deals header div a {
     padding: 5px 0;
   }
 
-  .deals-row{
+  .deals-row {
     flex-direction: column;
   }
 
-  .deals-row-ul{
-    width: 100%
+  .deals-row-ul {
+    width: 100%;
   }
 
-  .deals-row-ul:first-child{
+  .deals-row-ul:first-child {
     margin-top: 100px;
   }
 
-   .u-row{
-     width:100%;
-   }
-
+  .u-row {
+    width: 100%;
+  }
 
   .footer-share-ul-2 {
     width: 40%;
@@ -132,19 +138,10 @@
     padding-left: 3%;
   }
 
-.footer-share-ul > li {
-  margin: 3px;
-}
- .footer-share-links2 > a {
-   font-size: 8px;
-   margin: auto;
- }
-
-.footer-lower-div > p {
-  width: 40%;
-  margin: auto;
-  text-align: center;
-  font-size: 11px;
-}
-
+  .footer-lower-div > p {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 11px;
+  }
 }
