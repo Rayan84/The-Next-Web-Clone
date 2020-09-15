@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-mobile {
@@ -42,8 +48,8 @@ body {
 }
 
 #sticky-nav {
-    z-index: 10;
-    width: 100%;
+  z-index: 10;
+  width: 100%;
 }
 .navbar-2 {
   background-color: white;
@@ -56,16 +62,13 @@ body {
   margin-right: 20px;
 }
 
-.time{
+.time {
   font-size: 20px;
 }
 
 .nav-yellow-section-container {
   background-color: #fd3;
   padding: 7px;
-}
-
-.nav-yellow-section {
 }
 
 /* colors */
@@ -253,9 +256,9 @@ body {
   align-items: baseline;
 }
 
-.deals-row {
+/* .deals-row {
   margin-left: -40px;
-}
+} */
 
 .deals-row-ul {
   width: 250px;
@@ -405,14 +408,14 @@ ul {
 }
 
 .footer-share-links > a:hover {
-background: #000;
+  background: #000;
 }
 
 .footer-share-ul-2 {
- margin-left: auto;
- margin-right: auto;
- margin-top: 14px;
- width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  width: 30%;
 }
 
 .footer-share-links2 {
@@ -443,35 +446,132 @@ background: #000;
   margin-right: auto;
 }
 
-
 @media screen and (max-width: 690px) {
-.nav-pc,
-.article-logo {
-  display: none;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 
-.nav-mobile,
-.section-1,
-.section-1 > .article-1,
-.section-1 > .article-2-and-3-container {
-  width: 100%;
-  display: block;
-  padding-top: 0;
-}
+  .nav-pc,
+  .article-logo {
+    display: none;
+  }
 
-h1 {
-  font-size: 12px;
-}
+  .section-1,
+  .section-1 > .article-1,
+  .section-1 > .article-2-and-3-container {
+    width: 100%;
+    display: block;
+    padding-top: 0;
+  }
 
-.nav-mobile > ul {
-  display: flex;
-}
+  h1 {
+    font-size: 12px;
+  }
 
-.nav-mobile > ul > li {
-  list-style: none;
-  border-left: solid grey 1px;
-}
+  .nav-mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    top: 0;
 
+    z-index: 11;
+  }
+  .nav-mobile > ul {
+    margin-top: 0;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .nav-mobile > ul > div > li {
+    padding: 0 10px;
+    border-left: solid grey 1px;
+    width: 50px;
+    padding: auto;
+    padding-top: 4px;
+  }
+
+  .nav-mobile-div {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-mobile > ul > li {
+    list-style: none;
+    border-left: solid grey 1px;
+  }
+
+  .nav-yellow-section-container {
+    padding: 10px;
+  }
+
+  .section-1 {
+    margin-top: 90px;
+  }
+
+  .latest-section {
+    display: block;
+  }
+
+  .latest-ul-container {
+    display: block;
+  }
+
+  .latest-ul-container > ul {
+    display: flex;
+  }
+
+  .latest-ul-container > ul > li {
+    padding-right: 10px;
+  }
+
+  .latest-ul-container ul li a img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .latest-ul-container > ul > li:nth-child(3) {
+    display: none;
+  }
+
+  .deals{
+    display: block;
+    width: 90%;
+  }
+
+  .deals header {
+    display: list-item;
+    list-style: none;
+    padding-bottom: 5px;  
+  }
+
+  .deals header div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deals header div a {
+    padding: 5px 0;
+  }
+
+  .deals-row{
+    flex-direction: column;
+  }
+
+  .deals-row-ul{
+    width: 100%
+  }
+
+  .deals-row-ul:first-child{
+    margin-top: 100px;
+  }
+
+   .u-row{
+     width:100%;
+   }
 
 }
