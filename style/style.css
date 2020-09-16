@@ -30,7 +30,7 @@ body,
 }
 
 .nav-pc,
- .flex-column {
+.flex-column {
   flex-direction: column;
 }
 
@@ -63,7 +63,6 @@ body,
 
 #sticky-nav {
   z-index: 10;
-
 }
 
 .latest-ul-container > ul > li > a > img,
@@ -124,8 +123,8 @@ body,
 
 .footer-lower-div > p,
 #get-tickets {
-    font-size: 10px;
-  }
+  font-size: 10px;
+}
 
 #logo {
   width: 120px;
@@ -160,8 +159,8 @@ body,
 
 .lst-style-none,
 .navbar-1,
- .article-1 > header > ul > li,
- .latest-ul-container > ul > li {
+.article-1 > header > ul > li,
+.latest-ul-container > ul > li {
   list-style: none;
 }
 
@@ -174,8 +173,8 @@ body,
 .article-2,
 .article-3,
 .rsa {
-    background-size: cover;
-  }
+  background-size: cover;
+}
 
 .article-1 {
   padding-top: 20%;
@@ -242,7 +241,6 @@ body,
 .article-2,
 .article-3 {
   padding-left: 2%;
-
 }
 
 .article-3 {
@@ -288,7 +286,7 @@ body,
 
 .deals-row-ul li a,
 .text-size-12,
-.footer-share-links2 > a  {
+.footer-share-links2 > a {
   font-size: 14px;
 }
 
@@ -297,7 +295,7 @@ body,
 }
 
 .latest-ul-container > ul,
-ul  {
+ul {
   padding-left: 0;
 }
 

@@ -4,12 +4,34 @@
   }
 
   .section-1,
-  body{
-        padding: 0;
+  body {
+    padding: 0;
   }
 
   h1 {
     font-size: 12px;
+  }
+
+  .footer-share-ul > li {
+    margin: auto;
+  }
+
+  .footer-share-ul > li,
+  .section-1,
+  .footer-share-ul,
+  .footer-share-links2 > a,
+  .footer-lower-div > p,
+  .footer-share-ul-2 {
+    margin: auto;
+  }
+
+  .latest-ul-container > ul > li {
+    padding-right: 10px;
+  }
+
+  .deals-row-ul {
+    width: 28%;
+    margin-top: 100px;
   }
 
   #logo,
@@ -40,17 +62,9 @@
   .latest-section {
     display: block;
   }
-  
+
   .latest-ul-container {
     grid-template-columns: repeat(3, 32%);
-  }
-
-  .footer-share-ul > li {
-    margin: auto;
-  }
-
-  .latest-ul-container > ul > li {
-    padding-right: 10px;
   }
 
   .deals {
@@ -72,42 +86,22 @@
     padding: 5px 10px 5px 0;
   }
 
-  .deals-row-ul {
-    width: 28%;
-    margin-top: 100px;
+  .u-row {
+    width: 47%;
   }
-
-   .u-row {
-     width: 47%;
-   }
-
 
   .footer-share-ul-2 {
     width: 40%;
     padding-left: 3%;
   }
 
-.footer-share-ul {
-  width: 40%;
-}
-
-.footer-share-ul > li,
-.section-1,
-.footer-share-ul,
-.footer-share-links2 > a,
-.footer-lower-div > p,
-.footer-share-ul-2 {
-  margin: auto;
-}
-
- .footer-share-links2 > a {
-   font-size: 8px;
- }
-
-.footer-lower-div > p {
-  width: 40%;
-  text-align: center;
-  font-size: 11px;
+  .footer-share-ul {
+    width: 40%;
   }
 
+  .footer-lower-div > p {
+    width: 40%;
+    text-align: center;
+    font-size: 11px;
+  }
 }
