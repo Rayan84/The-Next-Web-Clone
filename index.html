@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/max-width-1024.css" />
     <link rel="stylesheet" href="./style/max-width-690px.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/5b1eeceadd.js"
       crossorigin="anonymous"
@@ -15,7 +15,7 @@
 
   <body>
     <header>
-      <nav class="nav-mobile">
+      <nav class="nav-mobile display-none">
         <ul>
           <li>
             <a href="#"><img src="./media/tnw-logo.png" alt="image" /></a>
@@ -36,8 +36,8 @@
         </div>
       </nav>
 
-      <nav class="nav-pc">
-        <ul class="navbar-1 lst-style-none">
+      <nav class="nav-pc flex flex-column">
+        <ul class="navbar-1 lst-style-none flex">
           <li><a class="txt-deco-none color-white" href="#">News</a></li>
           <li>
             <a class="txt-deco-none color-white" href="#">Events &darr;</a>
@@ -50,11 +50,11 @@
           <li>
             <a class="txt-deco-none color-white" href="#">Terms & Conditions</a>
           </li>
-          <div class="nav-right">
-            <li><a class="txt-deco-none color-white" href="#">About</a></li>
-            <li><a class="txt-deco-none color-white" href="#">Advertise</a></li>
-            <li><a class="txt-deco-none color-white" href="#">Jobs</a></li>
-            <li><a class="txt-deco-none color-white" href="#">Contact</a></li>
+          <div class="nav-right flex">
+            <li><a class="txt-deco-none color-white margin-4px" href="#">About</a></li>
+            <li><a class="txt-deco-none color-white margin-4px" href="#">Advertise</a></li>
+            <li><a class="txt-deco-none color-white margin-4px" href="#">Jobs</a></li>
+            <li><a class="txt-deco-none color-white margin-4px" href="#">Contact</a></li>
           </div>
         </ul>
         <div id="sticky-nav">
@@ -90,7 +90,7 @@
               />
               <p id="timerDisplay" class="nav-2-right-item time color-red"></p>
               <button
-                class="nav-2-right-item color-white"
+                class="nav-2-right-item color-white bold"
                 id="get-tickets"
                 type="button"
                 name="button"
@@ -108,9 +108,9 @@
       </nav>
     </header>
     <main>
-      <section class="section-1 color-white">
+      <section class="section-1 color-white flex">
         <h2 class="display-none">hidden</h2>
-        <article class="article-1">
+        <article class="article-1 flex">
           <div class="article-logo"></div>
           <header>
             <h5>INSIGHTS</h5>
@@ -118,178 +118,203 @@
               Satoshi Nakaboto: ‘Bitcoin sees highest trading volume in 118
               days’
             </h2>
-            <ul>
-              <li><a href="#" class="color-white">by Dhiraj Sharma</a></li>
+            <ul class="flex lst-style-none">
               <li>
-                <a href="#" class="color-white"
+                <a href="#" class="color-white txt-deco-none"
+                  >by Dhiraj Sharma</a
+                >
+              </li>
+              <li>
+                <a href="#" class="color-white txt-deco-none"
                   ><i class="far fa-clock"></i>1 hour ago</a
                 >
               </li>
               <li>
-                <a href="#" class="color-white"
+                <a href="#" class="color-white txt-deco-none"
                   ><i class="fas fa-share-alt"></i
                 ></a>
               </li>
-              <li><a href="#" class="color-white">6</a></li>
+              <li><a href="#" class="color-white txt-deco-none">6</a></li>
             </ul>
           </header>
         </article>
         <div class="article-2-and-3-container">
-          <article class="article-2">
+          <article class="article-2 flex">
             <header>
               <h2>Attend our 15th annual flagship event online for FREE</h2>
             </header>
           </article>
 
-          <article class="article-3">
+          <article class="article-3 flex">
             <header>
               <h5>INSIGHTS</h5>
               <h2>You’re using your company’s intranet all wrong</h2>
-              <ul>
-                <li><a href="#" class="color-white">by Dhiraj Sharma</a></li>
+              <ul class="flex">
                 <li>
-                  <a href="#" class="color-white"
-                    ><i class="far fa-clock color-white"></i>1 hour ago</a
+                  <a href="#" class="color-white txt-deco-none"
+                    >by Dhiraj Sharma</a
                   >
                 </li>
                 <li>
                   <a href="#" class="color-white"
+                    ><i class="far fa-clock color-white txt-deco-none"></i>1
+                    hour ago</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="color-white txt-deco-none"
                     ><i class="fas fa-share-alt"></i
                   ></a>
                 </li>
-                <li><a class="color-white" href="#">6</a></li>
+                <li><a class="color-white txt-deco-none" href="#">6</a></li>
               </ul>
             </header>
           </article>
         </div>
       </section>
 
-      <section class="latest-section">
-        <h2>Latest news &gt;</h2>
-        <div class="latest-ul-container">
-          <ul>
+      <section class="latest-section margin-auto">
+        <h2 class="color-red bold">Latest news &gt;</h2>
+        <div class="latest-ul-container jc-space-between">
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 ><img src="./media/first.jpg" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Pixel 3 batteries are swelling up — and that could spell
                 trouble for Google</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 ><img src="./media/second.jpg" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Trump says he won’t extend TikTok’s September deadline for sale
                 to a US-based firm</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 ><img src="./media/third.png" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Pardon the Intrusion #26: Facial recognition? That's a no from
                 me, dog</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 ><img src="./media/fourth.png" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >How to make collaborative playlists on Spotify and YouTube
                 Music</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 ><img src="./media/fifth.png" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Bose announces 3 new sunglasses with speakers built-in</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold" >author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 ><img src="./media/sixth.jpg" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Ubisoft Forward was all Greek gods, sands of time, and extreme
                 sports</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
               <a href="#" class="txt-deco-none"
                 ><img src="./media/seventh.jpg" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Disney's trouble with Oswald the Lucky Rabbit is a great lesson
                 for startups in a crisis</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black"
                 ><img src="./media/eighth.jpg" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Ninja is back on Twitch -- for real this time</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
         </div>
       </section>
 
-      <section class="deals">
+      <section class="deals margin-auto">
         <header class="flex jc-space-between">
-          <h2 class="h2">Latest funding rounds on Index.co &gt;</h2>
+          <h2 class="h2 color-red bold">Latest funding rounds on Index.co &gt;</h2>
           <div class="flex">
             <a class="color-red txt-deco-none" href="#">See more</a>
             <a class="color-red txt-deco-none" href="#">Get updates by email</a>
@@ -300,18 +325,11 @@
         <div class="deals-row flex flex-wrap jc-space-between">
           <ul class="deals-row-ul lst-style-none flex flex-column">
             <li class="flex flex-column deals-side-text">
-              <!-- <img
-                    src="media/deals-1.jpeg"
-                    alt="icon"
-                    width="100"
-                    height="100"
-                  /> -->
-
-              <a class="color-white txt-deco-none bold bg-red" href="#"
+              <a class="color-white txt-deco-none bold bg-red font-14" href="#"
                 >Oyster</a
               >
-              <a class="color-black txt-deco-none bold" href="#">$14m </a>
-              <a class="color-black txt-deco-none" href="#">SEED FUND</a>
+              <a class="color-black txt-deco-none bold font-14" href="#">$14m </a>
+              <a class="color-black txt-deco-none bold font-14" href="#">SEED FUND</a>
             </li>
             <li>
               <div class="flex flex-column">
@@ -336,18 +354,11 @@
 
           <ul class="deals-row-ul lst-style-none flex flex-column">
             <li class="flex flex-column deals-side-text">
-              <!-- <img
-                    src="media/deals-1.jpeg"
-                    alt="icon"
-                    width="100"
-                    height="100"
-                  /> -->
-
-              <a class="color-white txt-deco-none bold bg-red" href="#"
+              <a class="color-white txt-deco-none bold bg-red font-14" href="#"
                 >Oyster</a
               >
-              <a class="color-black txt-deco-none bold" href="#">$14m </a>
-              <a class="color-black txt-deco-none" href="#">SEED FUND</a>
+              <a class="color-black txt-deco-none bold font-14" href="#">$14m </a>
+              <a class="color-black txt-deco-none font-14" href="#">SEED FUND</a>
             </li>
             <li>
               <div class="flex flex-column">
@@ -372,18 +383,11 @@
 
           <ul class="deals-row-ul lst-style-none flex flex-column">
             <li class="flex flex-column deals-side-text">
-              <!-- <img
-                    src="media/deals-1.jpeg"
-                    alt="icon"
-                    width="100"
-                    height="100"
-                  /> -->
-
-              <a class="color-white txt-deco-none bold bg-red" href="#"
+              <a class="color-white txt-deco-none bold bg-red font-14" href="#"
                 >Oyster</a
               >
               <a class="color-black txt-deco-none bold" href="#">$14m </a>
-              <a class="color-black txt-deco-none" href="#">SEED FUND</a>
+              <a class="color-black txt-deco-none font-14" href="#">SEED FUND</a>
             </li>
             <li>
               <div class="flex flex-column">
@@ -408,18 +412,11 @@
 
           <ul class="deals-row-ul lst-style-none flex flex-column">
             <li class="flex flex-column deals-side-text">
-              <!-- <img
-                    src="media/deals-1.jpeg"
-                    alt="icon"
-                    width="100"
-                    height="100"
-                  /> -->
-
-              <a class="color-white txt-deco-none bold bg-red" href="#"
+              <a class="color-white txt-deco-none bold bg-red font-14" href="#"
                 >Oyster</a
               >
-              <a class="color-black txt-deco-none bold" href="#">$14m </a>
-              <a class="color-black txt-deco-none" href="#">SEED FUND</a>
+              <a class="color-black txt-deco-none bold font-14" href="#">$14m </a>
+              <a class="color-black txt-deco-none font-14" href="#">SEED FUND</a>
             </li>
             <li>
               <div class="flex flex-column">
@@ -445,9 +442,9 @@
       </section>
 
       <!-- Row section for the 3*3 items -->
-      <div class="row-section flex flex-wrap jc-space-between">
+      <div class="row-section flex flex-wrap jc-space-between margin-auto">
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Hard Fork &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -527,7 +524,7 @@
           </ul>
         </section>
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Apps &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -607,7 +604,7 @@
           </ul>
         </section>
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Gear &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -688,7 +685,7 @@
         </section>
 
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Tech &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -768,7 +765,7 @@
           </ul>
         </section>
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Creative &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -848,7 +845,7 @@
           </ul>
         </section>
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Podium &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -929,7 +926,7 @@
         </section>
 
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Insights &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -1009,7 +1006,7 @@
           </ul>
         </section>
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Distract &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -1089,7 +1086,7 @@
           </ul>
         </section>
         <section class="u-row">
-          <h2 class="h2">
+          <h2 class="h2 color-red bold">
             <a class="color-red txt-deco-none" href="#">Launch &gt;</a>
           </h2>
           <ul class="lst-style-none flex flex-column flex-start color-red">
@@ -1170,61 +1167,65 @@
         </section>
       </div>
 
-      <section class="latest-section">
-        <h2>Latest news &gt;</h2>
-        <div class="latest-ul-container">
-          <ul>
+      <section class="latest-section margin-auto">
+        <h2 class="color-red bold">Latest news &gt;</h2>
+        <div class="latest-ul-container jc-space-between">
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black"
                 ><img
                   src="./media/product_41667_product_shots1.jpg"
                   alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Pixel 3 batteries are swelling up — and that could spell
                 trouble for Google</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li><a href="#" class="txt-deco-none color-black bold">author time</a></li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none">
+              <a href="#" class="txt-deco-none color-black">
                 <img src="./media/product_41669_product_shots1.jpg" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Trump says he won’t extend TikTok’s September deadline for sale
                 to a US-based firm</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black"
                 ><img
                   src="./media/product_41668_product_shots1.jpg"
                   alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Pardon the Intrusion #26: Facial recognition? That's a no from
                 me, dog</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 ><img
                   src="./media/product_41671_product_shots1.jpg"
                   alt="image"
@@ -1232,33 +1233,37 @@
               </a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >How to make collaborative playlists on Spotify and YouTube
                 Music</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black"
                 ><img
                   src="./media/product_41673_product_shots1.jpg"
                   alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Bose announces 3 new sunglasses with speakers built-in</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none">
+              <a href="#" class="txt-deco-none color-black">
                 <img
                   src="./media/product_50451_product_shots1.jpg"
                   alt="image"
@@ -1266,88 +1271,94 @@
               </a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Ubisoft Forward was all Greek gods, sands of time, and extreme
                 sports</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
 
-          <ul>
+          <ul class="lst-style-none">
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black"
                 ><img
                   src="./media/product_50452_product_shots1.jpg"
                   alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Disney's trouble with Oswald the Lucky Rabbit is a great lesson
                 for startups in a crisis</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
-          </ul>
-          <ul>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
+          </ul>
+          <ul class="lst-style-none">
+            <li>
+              <a href="#" class="txt-deco-none color-black"
                 ><img src="./media/eighth.jpg" alt="image"
               /></a>
             </li>
             <li>
-              <a href="#" class="txt-deco-none"
+              <a href="#" class="txt-deco-none color-black bold"
                 >Ninja is back on Twitch -- for real this time</a
               >
             </li>
-            <li><a href="#" class="txt-deco-none">author time</a></li>
+            <li>
+              <a href="#" class="txt-deco-none color-black bold">author time</a>
+            </li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer-upper-div">
-        <ul class="flex footer-share-ul">
-          <li class="footer-share-links lst-style-none">
+        <ul class="flex footer-share-ul margin-auto">
+          <li class="footer-share-links lst-style-none margin-auto">
             <a href="#" class="color-white"><i class="fab fa-facebook"></i></a>
           </li>
-          <li class="footer-share-links lst-style-none">
+          <li class="footer-share-links lst-style-none margin-auto">
             <a href="#" class="color-white"><i class="fab fa-twitter"></i></a>
           </li>
-          <li class="footer-share-links lst-style-none">
+          <li class="footer-share-links lst-style-none margin-auto">
             <a href="#" class="color-white"><i class="fab fa-youtube"></i></a>
           </li>
-          <li class="footer-share-links lst-style-none">
+          <li class="footer-share-links lst-style-none margin-auto">
             <a href="#" class="color-white"><i class="fab fa-instagram"></i></a>
           </li>
-          <li class="footer-share-links lst-style-none">
+          <li class="footer-share-links lst-style-none margin-auto">
             <a href="#" class="color-white"
               ><i class="fab fa-pinterest-p"></i
             ></a>
           </li>
-          <li class="footer-share-links lst-style-none">
+          <li class="footer-share-links lst-style-none margin-auto">
             <a href="#" class="color-white"><i class="fas fa-rss"></i></a>
           </li>
-          <li class="footer-share-links lst-style-none">
+          <li class="footer-share-links lst-style-none margin-auto">
             <a href="#" class="color-white"><i class="fas fa-envelope"></i></a>
           </li>
         </ul>
         <ul class="flex footer-share-ul-2">
-          <li class="footer-share-links2 lst-style-none">
-            <a href="#">EVENTS</a>
+          <li class="footer-share-links2 lst-style-none margin-auto">
+            <a class="txt-deco-none font-14" href="#">EVENTS</a>
           </li>
-          <li class="footer-share-links2 lst-style-none">
-            <a href="#">ABOUT</a>
+          <li class="footer-share-links2 lst-style-none margin-auto">
+            <a class="txt-deco-none font-14" href="#">ABOUT</a>
           </li>
-          <li class="footer-share-links2 lst-style-none">
-            <a href="#">ADVERTISE</a>
+          <li class="footer-share-links2 lst-style-none margin-auto">
+            <a class="txt-deco-none font-14" href="#">ADVERTISE</a>
           </li>
-          <li class="footer-share-links2 lst-style-none">
-            <a href="#">JOBS</a>
+          <li class="footer-share-links2 lst-style-none margin-auto">
+            <a class="txt-deco-none font-14" href="#">JOBS</a>
           </li>
-          <li class="footer-share-links2 lst-style-none">
-            <a href="#">CONTACT</a>
+          <li class="footer-share-links2 lst-style-none margin-auto">
+            <a class="txt-deco-none font-14" href="#">CONTACT</a>
           </li>
         </ul>
       </div>
