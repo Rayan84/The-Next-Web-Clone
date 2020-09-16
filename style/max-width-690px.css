@@ -43,7 +43,7 @@
     margin: auto;
   }
 
-  .nav-mobile > ul > div > li {
+  .nav-mobile > ul > ul > li {
     border-left: solid grey 1px;
     width: 50px;
     padding: 5px 10px;
