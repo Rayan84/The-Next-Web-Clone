@@ -1,34 +1,30 @@
 @media screen and (max-width: 1024px) {
 
   body {
-    padding: 0;
     width: 100%;
   }
 
-
-   /*
-   section-1,
-  .section-1 > .article-1,
-  .section-1 > .article-2-and-3-container {
-    width: 100%;
-    display: block;
-    padding-top: 0;
+  .section-1,
+  body{
+        padding: 0;
   }
-  */
+
   h1 {
     font-size: 12px;
   }
 
-#logo,
-#timerDisplay,
-#get-tickets {
-  display: none;
-}
+  #logo,
+  #timerDisplay,
+  #get-tickets,
+  .latest-ul-container > ul > li:nth-child(3),
+  .deals-row-ul:nth-child(4) {
+    display: none;
+  }
+
   .section-1 {
     width: 98%;
-    margin: auto;
-    padding: 0;
   }
+
   .article-1 {
     width: 65%;
   }
@@ -37,10 +33,14 @@
     width: 35%;
   }
   .latest-section {
-    display: block;
     width: 90%;
   }
 
+  .deals,
+  .latest-section {
+    display: block;
+  }
+  
   .latest-ul-container {
     grid-template-columns: repeat(3, 32%);
   }
@@ -52,12 +52,7 @@
     padding-right: 10px;
   }
 
-  .latest-ul-container > ul > li:nth-child(3) {
-    display: none;
-  }
-
   .deals {
-    display: block;
     width: 90%;
   }
 
@@ -76,10 +71,6 @@
     margin-top: 100px;
   }
 
-  .deals-row-ul:nth-child(4) {
-    display: none;
-  }
-
    .u-row {
      width: 47%;
    }
@@ -87,27 +78,28 @@
 
   .footer-share-ul-2 {
     width: 40%;
-    margin: auto;
     padding-left: 3%;
   }
 
 .footer-share-ul {
   width: 40%;
-  margin: auto;
 }
 
-.footer-share-ul > li {
+.footer-share-ul > li,
+.section-1,
+.footer-share-ul,
+.footer-share-links2 > a,
+.footer-lower-div > p,
+.footer-share-ul-2 {
   margin: auto;
 }
 
  .footer-share-links2 > a {
    font-size: 8px;
-   margin: auto;
  }
 
 .footer-lower-div > p {
   width: 40%;
-  margin: auto;
   text-align: center;
   font-size: 11px;
   }

@@ -16,47 +16,63 @@ body,
   display: none;
 }
 
-.nav-pc {
+.flex,
+.nav-pc,
+.navbar-1,
+.nav-right,
+.section-1,
+.article-3 > header > ul,
+.article-1 > header > ul,
+.article-2,
+.article-3 {
   display: flex;
+}
+
+.nav-pc,
+ .flex-column {
   flex-direction: column;
 }
+
 .navbar-1 {
-  display: flex;
   background-color: black;
-  list-style: none;
+}
+
+.navbar-2,
+.navbar-1 {
   padding: 4px 20px;
 }
 
-.navbar-1 > li {
+.navbar-1 > li,
+.nav-right a,
+.article-1 > header > ul > li > a,
+.article-3 > header > ul > li > a {
   margin: 4px;
 }
 
-.navbar-1 > li > a {
-  color: white;
-  text-decoration: none;
+.nav-right,
+.footer-share-ul-2,
+.footer-lower-div > p {
+  margin-left: auto;
 }
 
 .nav-right {
-  display: flex;
-  margin-left: auto;
   margin-right: 10px;
   order: 2;
 }
 
-.nav-right a {
-  text-decoration: none;
-  color: white;
-  margin: 4px;
-}
-
 #sticky-nav {
   z-index: 10;
+
+}
+
+.latest-ul-container > ul > li > a > img,
+#sticky-nav {
   width: 100%;
 }
+
 .navbar-2 {
   background-color: white;
   flex-direction: row;
-  padding: 4px 20px;
   font-size: 13px;
 }
 
@@ -75,7 +91,9 @@ body,
 
 /* colors */
 
-.color-red {
+.color-red,
+.h2,
+.latest-section > h2 {
   color: red;
 }
 
@@ -83,16 +101,13 @@ body,
   color: white;
 }
 
-.color-black {
+.color-black,
+.latest-ul-container > ul > li > a {
   color: black;
 }
 
 .color-grey {
   color: #555;
-}
-
-.flex {
-  display: flex;
 }
 
 .flex-start {
@@ -101,22 +116,28 @@ body,
 
 #get-tickets {
   background-color: #0cc;
-  color: white;
   border: none;
   padding: 8px;
   border-radius: 4px;
-  font-size: 10px;
-  font-weight: bold;
 }
+
+.footer-lower-div > p,
+#get-tickets {
+    font-size: 10px;
+  }
 
 #logo {
   width: 120px;
 }
 
 .navbar-2-right-div {
-  width: 30%;
   justify-content: flex-end;
   border-right: #aaa;
+}
+
+.footer-share-ul-2,
+.navbar-2-right-div {
+  width: 30%;
 }
 
 .nav-2-right-item {
@@ -127,20 +148,33 @@ body,
   display: inline-block;
 }
 
-.txt-deco-none {
+.txt-deco-none,
+.navbar-1 > li > a,
+.nav-right a,
+.article-1 > header > ul > li > a,
+.article-3 > header > ul > li > a,
+.footer-share-links2 > a {
   text-decoration: none;
 }
 
-.lst-style-none {
+.lst-style-none,
+.navbar-1,
+ .article-1 > header > ul > li,
+ .latest-ul-container > ul > li {
   list-style: none;
 }
 
 .section-1 {
   margin-top: 5px;
-  display: flex;
-  color: white;
   padding-left: 2px;
 }
+
+.article-1,
+.article-2,
+.article-3,
+.rsa {
+    background-size: cover;
+  }
 
 .article-1 {
   padding-top: 20%;
@@ -152,7 +186,6 @@ body,
       rgba(194, 173, 173, 0.281)
     ),
     url("../media/article-1.jpg");
-  background-size: cover;
   position: relative;
 }
 
@@ -161,26 +194,22 @@ body,
     url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
     no-repeat;
   color: #fff;
-  position: absolute;
   left: 24px;
-  right: 24px;
   top: 24px;
+  right: 24px;
   z-index: 5;
   height: 100%;
   max-width: 50%;
 }
 
+.article-logo,
+.rsa-magic-bg,
+.rsa-header {
+  position: absolute;
+}
+
 .article-1 > header > h2 {
   font-size: 40px;
-}
-
-.article-3 > header > ul,
-.article-1 > header > ul {
-  display: flex;
-}
-
-.article-1 > header > ul > li {
-  list-style: none;
 }
 
 .article-2-and-3-container {
@@ -195,61 +224,50 @@ body,
   padding-top: 15%;
 }
 
-.article-2 {
+.article-2,
+.article-3 {
   height: 49%;
-  display: flex;
-  padding-left: 2%;
+}
+
+.article-2 {
   background-image: linear-gradient(
       to top,
       rgb(0, 0, 0),
       rgba(194, 173, 173, 0.281)
     ),
     url("../media/article-2.png");
-  background-size: cover;
+}
+
+.article-2,
+.article-3 {
+  padding-left: 2%;
+
 }
 
 .article-3 {
   margin-top: 8px;
-  height: 49%;
-  display: flex;
-  padding-left: 2%;
   background-image: linear-gradient(
       to top,
       rgb(0, 0, 0),
       rgba(194, 173, 173, 0.281)
     ),
     url("../media/article-3.png");
-  background-size: cover;
-}
-
-.article-1 > header > ul > li > a,
-.article-3 > header > ul > li > a {
-  text-decoration: none;
-  margin: 4px;
-  color: white;
 }
 
 .deals,
 .row-section,
 .latest-section {
   width: 85%;
-  margin: auto;
-}
-
-.h2,
-.latest-section > h2 {
-  color: red;
-  font-weight: bold;
 }
 
 .latest-ul-container {
   display: grid;
   grid-template-columns: repeat(4, 23%);
   grid-template-rows: auto;
-  justify-content: space-between;
 }
 
-.jc-space-between {
+.jc-space-between,
+.latest-ul-container {
   justify-content: space-between;
 }
 
@@ -258,10 +276,6 @@ body,
   align-items: baseline;
 }
 
-/* .deals-row {
-  margin-left: -40px;
-} */
-
 .deals-row-ul {
   width: 250px;
 }
@@ -269,19 +283,25 @@ body,
 .deals-row-ul li a {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.deals-row-ul li a,
+.text-size-12,
+.footer-share-links2 > a  {
   font-size: 14px;
 }
+
 .deals-side-text a {
   padding-left: 30%;
 }
 
-.latest-ul-container > ul {
+.latest-ul-container > ul,
+ul  {
   padding-left: 0;
 }
 
 .latest-ul-container > ul > li {
   padding-top: 3px;
-  list-style: none;
 }
 
 .latest-ul-container > ul > li:nth-child(3) > a {
@@ -289,25 +309,19 @@ body,
   color: #555;
 }
 
-.latest-ul-container > ul > li > a {
-  color: black;
-  font-weight: bold;
-}
-
 .latest-ul-container > ul > li > a > img {
-  width: 100%;
   height: 135px;
-}
-
-.flex-column {
-  flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-.bold {
+.bold,
+#get-tickets,
+.h2,
+.latest-section > h2,
+.latest-ul-container > ul > li > a {
   font-weight: bold;
 }
 
@@ -334,45 +348,35 @@ body,
   margin-left: 0;
 }
 
-ul {
-  padding-left: 0;
-}
-
 .rsa-magic-bg {
   background: transparent
     url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
     no-repeat;
   background-size: 100% 100%;
-  bottom: 0;
-  left: 0;
-  position: absolute;
   top: 0;
-  right: 0;
   z-index: 2;
 }
 
-.rsa-header {
+.rsa-header,
+.rsa-magic-bg {
   bottom: 0;
   left: 0;
-  padding: 14px;
-  position: absolute;
   right: 0;
+}
+
+.rsa-header {
+  padding: 14px;
   z-index: 3;
 }
 
 .rsa {
   padding-top: 75%;
   position: relative;
-  background-size: cover;
   opacity: 1;
 }
 
 .rsa1 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/wallstreetchimp-368x276.jpg");
-}
-
-.text-size-12 {
-  font-size: 14px;
 }
 
 .section-latest {
@@ -393,16 +397,19 @@ ul {
 }
 
 .footer-share-ul {
-  margin: auto;
   width: 40%;
 }
 
-.footer-share-links {
+.footer-share-ul,
+.footer-share-links,
+.deals,
+.row-section,
+.latest-section,
+.footer-share-links2 {
   margin: auto;
 }
 
 .footer-share-links > a {
-  color: white;
   font-size: 18px;
   background-color: #333;
   border-radius: 50%;
@@ -414,23 +421,16 @@ ul {
 }
 
 .footer-share-ul-2 {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 14px;
-  width: 30%;
 }
 
 .footer-share-links2 {
   padding-top: 15px;
-  margin: auto;
 }
 
 .footer-share-links2 > a {
   margin: 3px;
-  color: white;
-  font-size: 14px;
   color: #aaa;
-  text-decoration: none;
 }
 
 .footer-lower-div {
@@ -439,11 +439,13 @@ ul {
   padding-bottom: 20px;
 }
 
+.footer-share-ul-2,
+.footer-lower-div > p {
+  margin-right: auto;
+}
+
 .footer-lower-div > p {
   color: #aaa;
-  font-size: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
