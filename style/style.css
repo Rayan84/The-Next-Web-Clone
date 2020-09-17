@@ -305,6 +305,7 @@ ul,
   list-style-type: disc;
   border-bottom: 1px solid #eee;
   padding: 12px;
+  margin-left: 20px;
 }
 
 .row-section {
