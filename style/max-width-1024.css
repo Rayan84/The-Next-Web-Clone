@@ -1,0 +1,125 @@
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+
+  .section-1,
+  body {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  .footer-share-ul > li {
+    margin: auto;
+  }
+
+  .footer-share-ul > li,
+  .section-1,
+  .footer-share-ul,
+  .footer-share-links2 > a,
+  .footer-lower-div > p,
+  .footer-share-ul-2 {
+    margin: auto;
+  }
+
+  .latest-ul-container > ul > li {
+    padding-right: 10px;
+  }
+
+  .deals-row-ul {
+    width: 28%;
+    margin-top: 100px;
+  }
+
+  .navbar-2 > ul > li {
+    margin-right: 10px;
+  }
+
+  #logo,
+  #timerDisplay,
+  #get-tickets,
+  .latest-ul-container > ul > li:nth-child(3),
+  .deals-row-ul:nth-child(4) {
+    display: none;
+  }
+
+  .section-1 {
+    width: 98%;
+  }
+
+  .article-1 {
+    width: 65%;
+  }
+
+  .article-2-and-3-container {
+    width: 35%;
+  }
+
+  .navbar-2-right-div {
+    width: 5%;
+  }
+
+  .navbar-2 > a {
+    display: unset;
+    margin-right: 10px;
+  }
+
+  .navbar-2 {
+    margin-left: -20px;
+    height: 46px;
+  }
+
+  .latest-section {
+    width: 90%;
+  }
+
+  .deals,
+  .latest-section {
+    display: block;
+  }
+
+  .latest-ul-container {
+    grid-template-columns: repeat(3, 32%);
+  }
+
+  .deals {
+    width: 90%;
+  }
+
+  .deals header {
+    display: list-item;
+    list-style: none;
+    padding-bottom: 5px;
+  }
+
+  .footer-share-links2 > a {
+    font-size: 8px;
+    margin: auto;
+  }
+
+  .deals header div a {
+    padding: 5px 10px 5px 0;
+  }
+
+  .u-row {
+    width: 47%;
+  }
+
+  .footer-share-ul-2 {
+    width: 40%;
+    padding-left: 3%;
+  }
+
+  .footer-share-ul {
+    width: 40%;
+  }
+
+  .footer-lower-div > p {
+    width: 40%;
+    text-align: center;
+    font-size: 11px;
+  }
+}
